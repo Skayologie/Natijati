@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jawad Boulmal">
+  <meta name="description" content="يمكنك هنا ان تنشئ الحاسبة الخاصة بك لحساب المعدل العام , انطلاقا من معاملات المواد و الفروض و الامتحانات المنجزة داخل القسم ">
+  <meta name="keywords" content="moutamadris,massar,moutamadris.men.gov.ma,natija,dirasa,min7a,darija,morocco,maroc,Natijati,Natijati,calc,notes,html5,js,12/06/2003,programming,webdesigner,front,asmmid,python,php,DeveloppementInformatique(darija)maroc,Developpement,Informatique,css,skayologie,skay,jawad,boulmal">
+  <meta property="og:title" content="Natijati - حسب نقطتك و نوض على سلامتك">
+  <meta property="og:description" content="هذا الموقع مخصص للتلاميذ المغاربة , لحساب النتيجة النهائية للدورتين الأولى أو الثانية">
+  <meta property="og:image" content="../IMG/cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">  
+  <link rel="shortcut icon" href="../IMG/welcome-bg.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/theStyle.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>Natijati - Make Something For You</title>
+</head>
+<body>
+
+<style>
+    
+</style>
+
+
+<div class="upbar">
+   <img src="../IMG/welcome-bg.svg" alt="">
+   <div class="theSay">
+      <h1>NATIJATI.ML</h1>
+      <p>حسب نقطتك و نوض على سلامتك</p>
+   </div>
+</div>
+<div class="all">
+   <div id="sums" class="sums">
+      
+      <div class="TheTemplate">
+         
+         <div class="createAtemplate">
+           
+            <h1>من اختيارك</h1>
+            <h3>العنوان</h3>
+            <input id="title" type="text">
+            <h3>المعامل</h3>
+            <input id="mo3amil" type="number">
+            <h3>عدد الفروض</h3>
+            <input id="number" type="number">
+            <input type="button" name="okay" id="okay" value="اضافة"  onclick="create(document.getElementById('title').value,eval(document.getElementById('mo3amil').value),document.getElementById('number').value)"/>  
+         </div>
+    </div>
+    <!-- THE OPARATIONS -->
+    
+ <div class="operations">
+   <!-- this for calc all notes in one time (this is important before calc your finally result) -->
+   <!-- <input type="button" value="حسب كلشي دقة وحدة" onclick="doAllThis22()"/> -->
+   <!-- this for calc the for calc the finally result-->
+   <input type="button" value="حسب النتيجة" onclick="calcAllThis()"/>
+</div>
+<div id="finaliti" class="resultss">
+  <!-- THIS IS THE FINALLY RESULT YOU GET -->
+<p>: النقطة ديال الدورة </p><p id="dawra"></p>
+</div>
+
+   </div>
+   
+   
+</div>
+<script src="../JS/theScript.js"></script>
+<script src="script.js"></script>
+<script src="scriptCustom.js"></script>
+<script>
+
+</script>
+</body>
+</html>

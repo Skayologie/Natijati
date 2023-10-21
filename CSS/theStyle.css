@@ -1,0 +1,342 @@
+@import url("fonts/fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+   body{
+      background-color: #2f4b77;
+      text-align: center;
+        background-image: url("../IMG/welcome-bg.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment:fixed ;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 444px;
+        font-family: tajawal ;
+    
+    }
+   /* hide the scrollbar */
+::-webkit-scrollbar{
+    width: 0px;
+}
+    .all{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+
+    }
+    input{
+        padding-left: 10px;
+    }
+
+    .upbar{
+        margin: 20px;
+        background-color:#4059AF;
+        width: calc(100%-50px);
+        border-radius: 17px;
+        height: 111px;
+    }
+    .upbar img{
+        float: left;
+        width: 92.93px;
+        padding: 12px;
+    }
+    .upbar .theSay{
+        float: right;
+        color: white;
+        padding-right: 40px;
+        padding-top: 19px;
+    }
+    .upbar .theSay p{
+        font-size: 14px;
+        float: right;
+        direction: rtl;
+        font-family: Tajawal;
+        position: relative;
+        top: -11px;
+    }.upbar .theSay h1{
+        font-size: 40px;
+    }
+.sums{
+    width: 380px;
+}
+.TheTemplate{
+    margin-top: 50px;
+    background-color: rgb(247, 241, 241);
+    width: 407px;
+    height: 554px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px #0000006b;
+}
+.TheTemplate h1{
+    background-color: #4059AF;    
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.TheTemplate h3{
+    padding: 10px;
+    padding-right: 35px;
+    padding-top: 30px;
+    float: right;
+    direction: rtl;
+}
+.TheTemplate input{
+    width: 302px;
+    height: 47px;
+    border: none;
+    border-radius: 5px;
+}
+.TheTemplate input[type="button"]{
+    margin-top: 51px;
+    width: 311px;
+    border: none;
+    background-color: #4059AF;
+    color: white;
+    box-shadow: 0px 0px 10px #0000008a;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.TheTemplate .theresult{
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 44px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 298px;
+    height: 20px;
+    color: white;
+    background-color: #38488a;
+    height: 35px;
+    place-items: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    box-shadow:inset 0px 0px 10px -12px black;
+}
+.TheTemplate .theresult::before{
+    content: "المعدل العام لهذه المادة :";
+}
+
+.TheTemplate2{
+    margin-top: 50px;
+    background-color: rgb(247, 241, 241);
+    width: 407px;
+    height: auto;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px #0000006b;
+}
+
+.operations{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-top:50px ;
+    margin-bottom:50px ;
+}
+.operations input{
+    background-color: #38488a;
+    border: none;
+    color: white;
+    height: 100%;
+    width: 40%;
+    border-radius: 5px;
+    width: 49%;
+    height: 55px;
+    box-shadow: 0px 0px 56px #0000007d;
+}
+
+.resultss{
+    background-color: rgb(50, 165, 98);
+    position: fixed;
+    width: 200px;
+    height: auto;
+    top: 50px;
+    left: 30px;
+    display: inline;
+    padding: 15px;
+    border-radius: 05px;
+    animation: no9ta 2s;
+    color: white;
+    display: none;
+
+}
+@keyframes no9ta {
+    0%{
+        top: -70px;
+    }
+    100%{
+    top: 50px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .sums {
+        width: 358px;
+    }
+    .TheTemplate{
+        width: 100%;
+    }
+    .TheTemplate .theresult{
+        width: 266px;
+        margin-left: 37px;
+    }
+    .TheTemplate h3 {
+        padding: 10px;
+        padding-right: 55px;
+        padding-top: 30px;
+        float: right;
+        direction: rtl;
+    }
+    .TheTemplate input {
+        width: 270px;
+    }
+    .TheTemplate input[type="button"] {
+        width: 280px;
+    }
+    .upbar .theSay h1 {
+        font-size: 30px;
+    }
+    .upbar .theSay p {
+        font-size: 10.5px;
+        top: -7px;
+    }.upbar .theSay {
+        float: right;
+        color: white;
+        padding-right: 40px;
+        padding-top: 26px;
+       
+    }
+    .upbar img {
+        float: left;
+        width: 68.93px;
+        padding: 14px;
+    }
+
+    .TheForm .theQuestion {
+       width: 50%;
+    }
+    .TheForm .theQuestion h1 {
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+    }
+    .TheForm .theQuestion select {
+        font-size: 20px;
+    }
+}
+
+.thInputs .TheRadioInpput{
+    width: 20px;
+    padding: 10px;
+}
+.TheRadioInpput:checked{
+    background-color: red;
+}
+.thInputs p{
+    padding: 0px 12px;
+    font-size: 26px;
+    
+    font-family: 'Baloo Tammudu 2' ;
+}
+
+.ChooseOne{
+    width: 62%;
+    display: flex;
+    margin: auto;
+    justify-content: left;
+    padding: 10px 0px;
+}
+.sums .Thsay{
+    padding: 10px;
+    /* padding-right: 0px; */
+    /* padding-top: 38px; */
+    padding: 38px 0px 38px;
+    float: right;
+    direction: rtl;
+    width: 100%;
+}
+@media only screen and (max-width:372px) {
+    .upbar{
+        height: 81px;
+    }
+    .upbar .theSay h1 {
+        font-size:20px;
+    }
+    .upbar .theSay p {
+        font-size: 7px;
+    }
+    .upbar .theSay {
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+    .upbar img{
+        width: 53px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    #THeMEssage{
+        visibility: visible;
+    }
+}
+
+
+
+#svt{
+    display: none;
+}
+#pc{
+    display: none;
+}
+
+.theICh{
+    background-color: #4059AF;
+    padding-top: 20px;
+}
+.theICh h1{
+    background-color: rgba(255, 0, 0, 0);
+    font-size: x-large;
+}
+
+#THeMEssage{
+    background-color:#405aaf83;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    display: grid;
+    margin-top: -20px;
+    visibility: hidden;
+}
+.TheWindow{
+    background-color: #4059AF;
+    margin: auto;
+    place-items: center;
+    width: 90%;
+    padding: 35px 0px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px beige;
+}
+.TheWindow h1{
+    color: white;
+    font-size: 78%;
+}
+@media only screen and (max-width:360px) {
+    #THeMEssage{
+        visibility: visible;
+    }
+    .all,.upbar{
+        filter: blur(20px);
+    }
+
+    
+}

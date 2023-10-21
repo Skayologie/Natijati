@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jawad Boulmal">
+  <meta name="description" content="يمكنك هنا حساب المعدل العام للدورة للمستوى  ثالثة اعدادي انطلاقا من نتائج الامتحانات و الفروض المنجزة ">
+  <meta name="keywords" content="moutamadris,massar,moutamadris.men.gov.ma,natija,dirasa,min7a,darija,morocco,maroc,Natijati,Natijati,calc,notes,html5,js,12/06/2003,programming,webdesigner,front,asmmid,python,php,DeveloppementInformatique(darija)maroc,Developpement,Informatique,css,skayologie,skay,jawad,boulmal">
+  <meta property="og:title" content="Natijati - حسب نقطتك و نوض على سلامتك">
+  <meta property="og:description" content="هذا الموقع مخصص للتلاميذ المغاربة , لحساب النتيجة النهائية للدورتين الأولى أو الثانية">
+  <meta property="og:image" content="../IMG/cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+  <link rel="shortcut icon" href="../IMG/welcome-bg.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/theStyle.css">
+  <title>Natijati - الكاطريام</title>
+</head>
+<body>
+
+<style>
+    
+</style>
+
+
+<div class="upbar">
+   <img src="../IMG/welcome-bg.svg" alt="">
+   <div class="theSay">
+      <h1>NATIJATI.ML</h1>
+      <p>حسب نقطتك و نوض على سلامتك</p>
+   </div>
+</div>
+<!-- for Quatre eme -->
+<div class="all">
+   <div class="sums">
+      
+      <!-- start ijtima3iat -->
+      <div class="TheTemplate TheTemplate2">
+         <h1>الاجتماعيات</h1>
+         <h3 class="">الفرض الأول</h3>
+         <input id="test1" type="text" value="" />
+         <h3 class="">الفرض الثاني</h3>
+         <input id="test2" type="text" value="" />
+         <h3 class="">الفرض الثالث</h3>
+         <input id="test3" type="text" value="" />
+         <br>
+         <input type="button" name="okay" id="okay" value="Calc"  onclick="calc_3('resultHg',0,'test1','test2','test3',1)"/>
+         <p class="theresult" id="resultHg">0</p>
+      </div>
+      
+
+      <!-- end ijtima3iat -->
+            <!-- start eslamiat -->
+            <div class="TheTemplate TheTemplate2">
+               <h1>التربية الاسلامية</h1>
+               <h3 class="">الفرض الأول</h3>
+               <input id="test4" type="text" value="" />
+               <h3 class="">الفرض الثاني</h3>
+               <input id="test5" type="text" value="" />
+               <h3 class="">الفرض الثالث</h3>
+               <input id="test6" type="text" value="" />
+               <br>
+               <input type="button" name="okay" id="okay" value="Calc" onclick="calc_3('resultEI',1,'test4','test5','test6',1)"/>
+               <p class="theresult" id="resultEI">0</p>
+            </div>
+            
+      
+            <!-- end islamiat -->
+            <!-- start sport -->
+            <div class="TheTemplate TheTemplate2">
+               <h1>التربية البدنية</h1>
+               <h3 class="">الفرض الأول</h3>
+               <input id="test7" type="text" value="" />
+               <h3 class="">الفرض الثاني</h3>
+               <input id="test8" type="text" value="" />
+               <h3 class="">الفرض الثالث</h3>
+               <input id="test9" type="text" value="" />
+               <br>
+               <input type="button" name="okay" id="okay" value="Calc" onclick="calc_3('resultSP',2,'test7','test8','test9',1)"/>
+               <p  class="theresult"id="resultSP">0</p>
+            </div>
+            
+      
+            <!-- end sport -->
+            <!-- start maths -->
+            <div class="TheTemplate TheTemplate2">
+               <h1>الرياضيات</h1>
+               <h3 class="">الفرض الأول</h3>
+               <input id="test10" type="text" value="" />
+               <h3 class="">الفرض الثاني</h3>
+               <input id="test11" type="text" value="" />
+               <h3 class="">الفرض الثالث</h3>
+               <input id="test12" type="text" value="" />
+               <br>
+               <input type="button" name="okay" id="okay" value="Calc" onclick="calc_3('resultMATH',3,'test10','test11','test12',1)"/>
+               <p class="theresult" id="resultMATH">0</p>
+            </div>
+            
+      
+            <!-- end maths -->
+            
+            <!-- start pc -->
+            <div class="TheTemplate TheTemplate2">
+               <h1>الفيزياء و الكيمياء</h1>
+               <h3 class="">الفرض الأول</h3>
+               <input id="test16" type="text" value="" />
+               <h3 class="">الفرض الثاني</h3>
+               <input id="test17" type="text" value="" />
+               <h3 class="">الفرض الثالث</h3>
+               <input id="test18" type="text" value="" />
+               <h3 class="">الفرض الرابع</h3>
+               <input id="test19" type="text" value="" />
+               
+               <br>
+               <input type="button" name="okay" id="okay" value="Calc" onclick="calc_4('resultpc',4,'test16','test17','test18','test19',1)"/>
+               <p class="theresult" id="resultpc">0</p>
+            </div>
+            
+      
+            <!-- end pc -->
+
+            <!-- start english -->
+            <div class="TheTemplate TheTemplate2">
+               <h1>اللغة الانجليزية</h1>
+               <h3 class="">الفرض الأول</h3>
+               <input id="test20" type="text" value="" />
+               <h3 class="">الفرض الثاني</h3>
+               <input id="test21" type="text" value="" />
+               <h3 class="">الفرض الثالث</h3>
+               <input id="test22" type="text" value="" />
+               <br>
+               <input type="button" name="okay" id="okay" value="Calc" onclick="calc_3('resulteng',5,'test20','test21','test22',1)"/>
+               <p class="theresult" id="resulteng">0</p>
+            </div>
+
+           
+            
+      
+            <!-- end english -->
+
+            <!-- start arab -->
+            <div class="TheTemplate TheTemplate2">
+               <h1>اللغة العربية</h1>
+               <h3 class="">الفرض الأول</h3>
+               <input id="test23" type="text" value="" />
+               <h3 class="">الفرض الثاني</h3>
+               <input id="test24" type="text" value="" />
+               <h3 class="">الفرض الثالث</h3>
+               <input id="test25" type="text" value="" />
+               <br>
+               <input type="button" name="okay" id="okay" value="Calc" onclick="calc_3('resultar',6,'test23','test24','test25',1)"/>
+               <p  class="theresult" id="resultar">0</p>
+            </div>
+            
+      
+            <!-- end arab -->
+
+            <!-- start french -->
+            <div class="TheTemplate TheTemplate2">
+               <h1>اللغة الفرنسية</h1>
+               <h3 class="">الفرض الأول</h3>
+               <input id="test26" type="text" value="" />
+               <h3 class="">الفرض الثاني</h3>
+               <input id="test27" type="text" value="" />
+               <h3 class="">الفرض الثالث</h3>
+               <input id="test28" type="text" value="" />
+               <h3 class="">الفرض الرابع</h3>
+               <input id="test29" type="text" value="" />
+               <h3 class="">الفرض الخامس</h3>
+               <input id="test30" type="text" value="" />
+               <br>
+               <input type="button" name="okay" id="okay" value="Calc" onclick="calc_5('resultfr',7,'test26','test27','test28','test29','test30',1)"/>
+               <p class="theresult" id="resultfr">0</p>
+            </div>
+            
+      
+            <!-- end french -->
+
+            <!-- start svt -->
+            <div class="TheTemplate TheTemplate2">
+               <h1>علوم الحياة و الارض</h1>
+               <h3 class="">الفرض الأول</h3>
+               <input id="test31" type="text" value="" />
+               <h3 class="">الفرض الثاني</h3>
+               <input id="test32" type="text" value="" />
+               <h3 class="">الفرض الثالث</h3>
+               <input id="test33" type="text" value="" />
+               <br>
+               <input type="button" name="okay" id="okay" value="Calc" onclick="calc_3('resultsvt',8,'test31','test32','test33',1)"/>
+               <p class="theresult" id="resultsvt">0</p>
+            </div>
+            
+      
+            <!-- end svt -->
+
+            <!-- THE OPARATIONS -->
+            <div class="operations">
+               <!-- this for calc all notes in one time (this is important before calc your finally result) -->
+               <input type="button" value="حسب كلشي دقة وحدة" onclick="doAllThis()"/>
+               <!-- this for calc the for calc the finally result-->
+               <input type="button" value="حسب النتيجة" onclick="calcAllThis()"/>
+            </div>
+           <div id="finaliti" class="resultss">
+              <!-- THIS IS THE FINALLY RESULT YOU GET -->
+            <p>: النقطة ديال الدورة </p><p id="dawra"></p>
+           </div>
+
+
+
+   </div>
+   
+</div>
+
+<script src="scriptQuatre.js"></script>
+<script src="../JS/theScript.js"></script>
+</body>
+</html>
