@@ -32,17 +32,29 @@
     input{
         padding-left: 10px;
     }
+.content{
+    /* background-color:rgb(0, 4, 255) ; */
+    height: 100%;
+    width: 85%;
+}
 
     .upbar{
         margin: 20px;
         background-color:#4059AF;
         width: calc(100%-50px);
-        border-radius: 17px;
-        height: 111px;
+        border-radius: 8px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .image{
+        background-color: red;
+        height: 100%;
+        width: 100px;
     }
     .upbar img{
         float: left;
-        width: 92.93px;
+        width: 100%;
         padding: 12px;
     }
     .upbar .theSay{

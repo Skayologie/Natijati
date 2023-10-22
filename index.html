@@ -17,22 +17,135 @@
     <link rel="stylesheet" href="CSS/theStyle.css">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Natijati - حسب نقطتك و نوض على سلامتك</title>
+    <style>
+        .upbaring{
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            place-items: center;
+        }
+        .NavBar{
+            background-color: #4059AF;
+            height: 85%;
+            width: 95%;
+            display: flex;
+            justify-content: center;
+            place-items: center;
+            border-radius: 8px;
+        }
+        .grid {
+            width: 80%;
+            height: 80px;
+            /* background-color: blue; */
+            display: flex;
+            justify-content: space-between;
+            place-items: center;
+        }
+        .logo{
+
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            place-items: center;
+            /* background-color: red; */
+        }
+        .logo img{
+            width: 80%;
+        }
+        .Quote{
+            /* background-color: red; */
+            color: white;
+        }
+        .Quote h1{
+            letter-spacing: 4px;
+        }
+        .Quote p{
+            font-size: 10px;
+            position: relative;
+            top: -8px;
+        }
+
+        .TheForm{
+            /* background-color: red; */
+            padding-bottom: 0%;
+        }
+        .TheForm .theQuestion{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 90px auto;
+            backdrop-filter: blur(10px);
+            background-color: rgba(47, 75, 119, 0.4);
+            box-shadow: 0px 0px 100px 20px #2F4B77;
+        }
+        .thisform{
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: #DFDFDF;
+            height: 70px;
+            place-items:center ;
+            justify-content: space-between;
+            border-radius: 10px;
+            padding: 4px;
+            margin: 10px 0px;
+        }
+        .arrow{
+            /* background-color: red; */
+            height: 100%;
+            width: 75px;
+            display: flex;
+            place-items: center;
+            justify-content: center;
+            background-color: #4059AF;
+            border-radius: 8px;
+        }
+        .arrow img{
+            width: 30px;
+        }
+        .arrow img path{
+            stroke: aliceblue;
+        }
+        .text h2{
+            font-size: 20px;
+        }
+        #theanswer{
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="upbar">
-        <img src="IMG/welcome-bg.svg" alt="">
-        <div class="theSay">
-           <h1>NATIJATI.ML</h1>
-           <p>حسب نقطتك و نوض على سلامتك</p>
+    <!-- <div class="upbar">
+        <div class="content">
+            <div class="image">
+                <img src="IMG/welcome-bg.svg" alt="">
+            </div>
+            <div class="theSay">
+               <h1>NATIJATI</h1>
+               <p>حسب نقطتك و نوض على سلامتك</p>
+            </div>
+        </div>
+     </div> -->
+<div class="upbaring">
+
+
+     <div class="NavBar">
+         <div class="grid">
+            <div class="logo">
+                <img src="IMG/welcome-bg.svg" alt="">
+            </div>
+            <div class="Quote">
+                <h1>NATIJATI</h1>
+                <p>حسب نقطتك و نوض على سلامتك</p>
+            </div>
         </div>
      </div>
-
-     
-
+</div>
 
     <div class="TheForm">
         <div class="theQuestion">
-            <div class="theAnswer">
+            <!-- <div class="theAnswer">
 
                 <select name="" id="theanswer">
                     <option value="four">الكاطريام</option>
@@ -41,15 +154,53 @@
                     <option value="seven">الباك</option>
                 </select>
                 <h1>كنقرا فـ</h1>
-            </div>
-            <input id="theBUtton" type="button" value="يا بسم الله">
+            </div> -->
+            <!-- <input id="theBUtton" type="button" value="يا بسم الله">
             <a href="#CUSTOM">
 
                 <input id="theBUttonNoChoose" type="button" value="مكاينش المستوى ديالي">
-            </a>
+            </a> -->
             <!-- <h1 class="thesecond">الى مكانش المستوى فاش كتقرا لفوق دخل قاد داكشي ديالك</h1>
             <input id="theBUttonCustom" type="button" value="يا بسم الله"> -->
+            <div class="thisform">
+                <div style="padding-right: 20px; display: flex;justify-content: center;flex-direction: row-reverse;place-items: center;">
 
+                    <div class="text">
+                        <h2>كنقرا فـ</h2>
+                    </div>
+                    <div class="selection">
+                        <select name="" id="theanswer">
+                            <option value="four">الكاطريام</option>
+                            <option value="five">السانكيام</option>
+                            <option value="six">السيزيام</option>
+                            <option value="seven">الباك</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <img src="IMG/arrow.svg" alt="">
+                </div>
+            </div>
+
+            <div class="thisform">
+                <div style="padding-right: 20px; display: flex;justify-content: center;flex-direction: row-reverse;place-items: center;">
+
+                    <div class="text">
+                        <h2>مكاينش المستوى ديالي</h2>
+                    </div>
+                    <!-- <div class="selection">
+                        <select name="" id="theanswer">
+                            <option value="four">الكاطريام</option>
+                            <option value="five">السانكيام</option>
+                            <option value="six">السيزيام</option>
+                            <option value="seven">الباك</option>
+                        </select>
+                    </div> -->
+                </div>
+                <div class="arrow">
+                    <img src="IMG/arrow.svg" alt="">
+                </div>
+            </div>
         </div>
       
         
